@@ -1,0 +1,42 @@
+# EVENTMSGTYPE
+# 1: Jumpshot
+    1-Jumpshot Made, with assist
+    42-Layup
+# 2: Miss
+# 3: Free Throw
+# 4: Rebound
+# 5: Steal/Turnover
+# 6: Foul
+    FoulTypePersonal                FoulType = 1
+	FoulTypeShooting                         = 2
+	FoulTypeLooseBall                        = 3
+	FoulTypeOffensive                        = 4
+	FoulTypeInbound                          = 5
+	FoulTypeAwayFromPlay                     = 6
+	FoulTypePunching                         = 8
+	FoulTypeClearPath                        = 9
+	FoulTypeTechnical                        = 11
+	FoulTypeUnsportsmanlike                  = 12
+	FoulTypeHangingTechnical                 = 13
+	FoulTypeFlagrantOne                      = 14
+	FoulTypeFlagrantTwo                      = 15
+	FoulTypeTeamTechnical                    = 17
+	FoulTypeDelay                            = 18
+	FoulTypeTaunting                         = 19
+	FoulTypeExcessTimeout                    = 25
+	FoulTypeOffensiveCharge                  = 26
+	FoulTypePersonalBlock                    = 27
+	FoulTypePersonalTake                     = 28
+	FoulTypeShootingBlock                    = 29
+	FoulTypeTooManyPlayersTechnical          = 30
+
+# 7: Game Violation
+# 8: Sub
+# 9: Timeout
+# 10: Jumpball
+# 11: Technical/Ejection
+# 12: Start of Quarter
+# 13: End of
+
+array([ 4,  2,  1, 17,  3, 26, 29, 27, 28, 19, 11, 12, 14, 10, 16,  6,  9,
+        5, 18, 15, 25, 30, 13])

@@ -99,7 +99,6 @@ class BasketballViewer(tk.Tk):
 
         self.nBook.grid(row=1, column=0, columnspan=5)
 
-
         self.current_list.grid(row=0, column=5, rowspan=3)
 
         self.graph_lf.grid(pady=1, padx=1, row=5, columnspan=20)

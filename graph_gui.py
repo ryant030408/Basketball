@@ -11,6 +11,7 @@ import top_of_gui as tog
 from tkinter.filedialog import asksaveasfile
 from matplotlib import pyplot as plt
 import numpy as np
+import constants
 
 
 
@@ -32,10 +33,8 @@ class BasketballViewer(tk.Tk):
 
 
         # stats to pull
-        self.player_stat_list = ['MIN', 'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT',
-                                 'OREB', 'DREB','REB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'PTS', 'PLUS_MINUS']
-        self.team_stat_list = ['FGM', 'FGA','FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB',
-                               'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'PTS']
+        self.player_stat_list = constants.PLAYER_GAME_LOG_STAT_LIST
+        self.team_stat_list = constants.TEAM_GAME_LOG_STAT_LIST
 
         # for side piece
         self.current_list = []
@@ -73,10 +72,12 @@ class BasketballViewer(tk.Tk):
         self.team_name = StringVar()
         self.year_to_use = StringVar()
         self.player_team_radio_val = tk.IntVar()
+        self.player_team_radio_val.set(2)
 
         # top gui container
         self.top_frame = ttk.LabelFrame(self, text='Global Options')
 
+        # gets windows for gui for different sections
         tog.get_top_gui(self)  # sets up top row of gui
         sesg.get_gui(self) # sets up gui items for per game
         sestg.get_season_tot_gui(self) # sets up season totals gui

@@ -1,12 +1,6 @@
-from tkinter import *
 import tkinter as tk
 import tkinter.ttk as ttk
-from PIL import ImageTk, Image
-import pandas as pd
 import graph_gui_functions as gf
-from tkinter.filedialog import asksaveasfile
-from matplotlib import pyplot as plt
-import numpy as np
 
 
 def get_gui(self):

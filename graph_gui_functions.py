@@ -149,12 +149,13 @@ def get_team_id(team_abbr):
 
 
 # creates array of years in format for nba_py
-# TODO add more years
 def year_creator():
     yeara = 2017
     yearb = 18
     years = []
-    for i in range(0, 10):
+    for i in range(0, 72):
+        if yearb == -1:
+            yearb = 99
         years.append(str(yeara) + '-' + str(yearb).zfill(2))
         yeara = yeara-1
         yearb = yearb-1

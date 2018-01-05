@@ -8,7 +8,7 @@ from pathlib import Path
 
 # decides which functon to execute
 def download_finder(stat):
-
+    print('test')
 
 # fills frame with data about files
 def frame_filler(self, stat):
